@@ -1,0 +1,10 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<form action="/loginrequest" method="POST">
+    <input type="text" placeholder="Username" name="email">
+    <input type="password" placeholder="Password" name="password">
+    <input type="submit">
+</form>
+<p>Not registered? Register <a href='/register'>here</a>.</p>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<form action="/registerrequest" method="POST">
+    <input type="text" placeholder="First Name" name="firstname">
+    <input type="text" placeholder="Surname" name="surname">
+    <input type="text" placeholder="E-Mail Address" name="email">
+    <input type="password" placeholder="Password" name="password">
+    <input type="submit">
+</form>
+<p>Already registered? Login <a href='/login'>here</a>.</p>
+{% endblock %}
