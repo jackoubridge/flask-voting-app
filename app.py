@@ -13,7 +13,7 @@ mysql = MySQL(app)
 @app.route('/')
 def index():
     return redirect('/login')
-    
+
 @app.route('/login')
 def login():
     return render_template('login.html', title='Login')
@@ -25,6 +25,10 @@ def register():
 @app.route('/home')
 def home():
     return render_template('home.html', title='Home')
+
+@app.route('/votes')
+def home():
+    return render_template('votes.html', title='Votes')
 
 @app.route('/registerrequest', methods = ['POST', 'GET'])
 def registerrequest():
